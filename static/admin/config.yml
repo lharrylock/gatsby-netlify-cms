@@ -21,6 +21,24 @@ collections:
       - {label: "Body", name: "body", widget: "markdown"}
       - {label: "Tags", name: "tags", widget: "list"}
 
+  - name: "subtools"
+    label: "Subtools"
+    label_singular: "subtool"
+    folder: "src/pages/subtool"
+    create: true
+    fields:
+      - {label: "Name", name: "title", widget: "string"}
+      - label: "Scripts"
+        name: "scripts"
+        widget: "list"
+        field:
+          - {label: "file", name: "file", widget: "file"}
+      - label: "Stylesheets"
+        name: "stylesheets"
+        widget: "list"
+        field:
+          - {label: "file", name: "file", widget: "file"}
+
   - name: "pages"
     label: "Pages"
     files:

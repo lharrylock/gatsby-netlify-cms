@@ -27,6 +27,7 @@ collections:
     folder: "src/pages/subtool"
     create: true
     fields:
+      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "sub-tool"}
       - {label: "Tool name", name: "title", widget: "string"}
       - {label: "Markup", name: "body", widget: "markdown"}
       - label: "Scripts"

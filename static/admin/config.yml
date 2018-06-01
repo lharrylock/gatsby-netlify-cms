@@ -28,6 +28,7 @@ collections:
     create: true
     fields:
       - {label: "Tool name", name: "title", widget: "string"}
+      - {label: "Markup", name: "body", widget: "markdown"}
       - label: "Scripts"
         name: "scripts"
         widget: "list"

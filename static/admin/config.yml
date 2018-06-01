@@ -27,17 +27,21 @@ collections:
     folder: "src/pages/subtool"
     create: true
     fields:
-      - {label: "Name", name: "title", widget: "string"}
+      - {label: "Tool name", name: "title", widget: "string"}
       - label: "Scripts"
         name: "scripts"
         widget: "list"
         field:
-          - {label: "file", name: "file", widget: "file"}
+          - label: "script"
+            name: "script"
+            widget: "file"
       - label: "Stylesheets"
         name: "stylesheets"
         widget: "list"
         field:
-          - {label: "file", name: "file", widget: "file"}
+          - label: "stylesheet"
+            name: "stylesheet"
+            widget: "file"
 
   - name: "pages"
     label: "Pages"

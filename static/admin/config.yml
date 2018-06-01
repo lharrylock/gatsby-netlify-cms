@@ -30,20 +30,8 @@ collections:
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: "sub-tool"}
       - {label: "Tool name", name: "title", widget: "string"}
       - {label: "Markup", name: "body", widget: "markdown"}
-      - label: "Scripts"
-        name: "scripts"
-        widget: "list"
-        field:
-          - label: "script"
-            name: "script"
-            widget: "file"
-      - label: "Stylesheets"
-        name: "stylesheets"
-        widget: "list"
-        field:
-          - label: "stylesheet"
-            name: "stylesheet"
-            widget: "file"
+      - {label: "Scripts", name: "scripts", widget: "list", field: [{label: "script", name: "script", widget: "file"}]}
+      - {label: "Stylesheets", name: "stylesheets", widget: "list", field: [{label: "stylesheet", name: "stylesheet", widget: "file"}]}
 
   - name: "pages"
     label: "Pages"

@@ -1,6 +1,5 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { kebabCase } from 'lodash'
 import Helmet from 'react-helmet'
 import Content, { HTMLContent } from '../components/Content'
 
@@ -51,15 +50,12 @@ SubTool.propTypes = {
 
 export default SubTool
 
-export const pageQuery = graphql`
-  query BlogPostByID($id: String!) {
-    markdownRemark(id: { eq: $id }) {
-      id
+export const query = graphql`
+  query SubTool {
+    markdownRemark {
       html
       frontmatter {
         title
-        scripts
-        stylesheets
       }
     }
   }

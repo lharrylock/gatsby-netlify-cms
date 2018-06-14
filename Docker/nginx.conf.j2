@@ -2,7 +2,7 @@ server {
     listen {{ ALLEN_CELL_PORT | default(80) }};
 
     # Application should be copied into /app
-    location / {
+    location /test {
         alias /app;
     }
 }

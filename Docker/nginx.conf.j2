@@ -1,5 +1,5 @@
 server {
-    listen {{ ALLEN_CELL_PORT | default(80) }};
+    listen {{ ALLEN_CELL_PORT | default(9040) }};
 
     # Application should be copied into /app
     location /test {
